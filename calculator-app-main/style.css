@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    color: hsl(221, 14%, 31%);
+    font-weight: 700;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    background-color: hsl(222, 26%, 31%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body.active1 {
+    background-color: hsl(0, 0%, 90%);
+}
+
+body.active2 {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.attribution {
+    font-family: fraunces;
+    text-align: center;
+    line-height: 1;
+    margin-top: 2rem;
+    color: white;
+}
+
+body.active1 .attribution {
+    color: hsl(60, 10%, 19%);
+}
+
+body.active2 .attribution {
+    color: hsl(52, 100%, 62%);
+}
+
+a {
+    color: hsl(6, 63%, 50%);
+}
+
+body.active1 a {
+    color: hsl(25, 98%, 40%);
+}
+
+body.active2 a {
+    color: hsl(176, 100%, 44%);
+}
+
+.title h3 {
+    position: relative;
+    top: 30px;
+}
+
+body.active1 .title h3 {
+    color: hsl(60, 10%, 19%);
+}
+
+body.active2 .title h3 {
+    color: hsl(52, 100%, 62%);
+}
+
+.num-toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+body.active1 .right p {
+    color: hsl(60, 10%, 19%);
+}
+
+body.active2 .right p {
+    color: hsl(52, 100%, 62%);
+}
+
+.num-toggle p {
+    margin: 0 7px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+
+h3 {
+    color: white;
+    margin-left: 5px;
+}
+
+body.active1 .num-toggle h3 {
+    color: hsl(60, 10%, 19%);
+}
+
+body.active2 .num-toggle h3 {
+    color: hsl(52, 100%, 62%);
+}
+
+.control {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.control .box {
+    width: 58px;
+    height: 15px;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 30px;
+    margin-right: 3px;
+    position: relative;
+}
+
+body.active1 .control .box {
+    background-color: hsl(0, 5%, 81%);
+}
+
+body.active2 .control .box {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.control #circle {
+    width: 15px;
+    height: 15px;
+    background-color: hsl(6, 63%, 50%);
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+body.active1 .control #circle {
+    background-color: hsl(25, 98%, 40%);
+}
+
+body.active2 .control #circle {
+    background-color: hsl(176, 100%, 44%);
+}
+
+.control p {
+    color: white;
+    font-size: 7px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 4px;
+}
+
+body.active1 .control p {
+    color: hsl(60, 10%, 19%);
+}
+
+body.active2 .control p {
+    color: hsl(52, 100%, 62%);
+}
+
+.screen {
+    width: 450px;
+}
+
+#screen {
+    width: 100%;
+    height: 100px;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    margin-top: 25px;
+    border: 0;
+    color: white;
+    text-align: right;
+    font-size: 35px;
+    padding-right: 25px;
+}
+
+body.active1 #screen {
+    background-color: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+
+body.active2 #screen {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+button {
+    width: 83px;
+    height: 52px;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: white;
+}
+
+body.active1 button {
+    box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+}
+
+body.active1 button:hover {
+    background-color: white;
+}
+
+body.active2 button {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+}
+
+body.active2 button:hover {
+    background-color: hsl(281, 89%, 26%);
+}
+
+.bttns {
+    display: flex;
+    width: 450px;
+    flex-flow: wrap;
+    background-color: hsl(224, 36%, 15%);
+    padding: 15px 5px;
+    margin: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+body.active1 .bttns {
+    background-color: hsl(0, 5%, 81%);
+}
+
+body.active2 .bttns {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.num {
+    font-size: 25px;
+    color: hsl(221, 14%, 31%);
+}
+
+.caract {
+    font-size: 25px;
+    color: hsl(221, 14%, 31%);
+}
+
+.delete {
+    font-size: 18px;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
+    color: white;
+}
+
+.delete:hover {
+     background-color: hsl(225, 21%, 60%);
+}
+
+body.active1 .reset,
+body.active1 .delete {
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 3px 0px 0px hsl(185, 58%, 25%);
+    color: hsl(0, 0%, 100%);
+}
+
+body.active1 .reset:hover,
+body.active1 .delete:hover {
+    background-color: hsl(185, 42%, 50%);
+}
+
+body.active2 .reset,
+body.active2 .delete {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 3px 0px 0px hsl(285, 91%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+body.active2 .reset:hover,
+body.active2 .delete:hover {
+    background-color: hsl(281, 89%, 40%);
+}
+
+.reset {
+    width: 190px;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
+    color: white;
+}
+
+.reset:hover {
+    background-color: hsl(225, 21%, 60%);
+}
+
+.result {
+    width: 190px;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
+    color: white;
+}
+
+.result:hover {
+    background-color: hsl(6, 63%, 60%);
+}
+
+body.active1 .result {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
+    color: hsl(0, 0%, 100%);
+}
+
+body.active1 .result:hover {
+    background-color: hsl(25, 98%, 60%);
+}
+
+body.active2 .result {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+body.active2 .result:hover {
+    background-color: hsl(176, 100%, 80%);
+}
