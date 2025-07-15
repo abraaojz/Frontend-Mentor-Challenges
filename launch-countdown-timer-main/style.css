@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;     
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.stars {
+    position: absolute;
+}
+
+.hills {
+    position: absolute;
+    bottom: 0;
+}
+
+body {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 700;
+    background-color: hsl(235, 16%, 14%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.container h1 {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 80px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.countdown div {
+    margin: 10px;
+}
+
+.countdown h3 {
+    color: hsl(237, 18%, 59%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 9px;
+    margin-top: 18px;
+    transform: translateX(1%);
+}
+
+.countdown p {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: hsl(236, 21%, 26%);
+    font-size: 50px;
+    box-shadow: 0 7px black;
+    color: hsl(345, 95%, 68%);
+    border-radius: 5px;
+}
+
+.socials {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.socials ul {
+    display: flex;
+}
+
+.socials ul li {
+    margin: 0 20px;
+}
+
+.attribution {
+  font-family: fraunces;
+  text-align: center;
+  line-height: 1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.attribution a {
+    color: blue;
+}
+
+.attribution a:hover {
+    color: blueviolet;
+}
